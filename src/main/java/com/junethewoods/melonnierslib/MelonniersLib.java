@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.core;
+package com.junethewoods.melonnierslib;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.core.util;
+package com.junethewoods.melonnierslib.item.custom;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -11,9 +11,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public class MLArmors implements IArmorMaterial {
-    private static final int[] HEALTH_PER_SLOT = new int[] {
-            13, 15, 16, 11
-    };
+    private static final int[] HEALTH_PER_SLOT = new int[] {13, 15, 16, 11};
 
     private final String name;
     private final int durabilityMultiplier;

@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.core.datagen;
+package com.junethewoods.melonnierslib.data;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -13,6 +13,18 @@ public abstract class MLItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder standard(ModelFile model, String name) {
         return getBuilder(name).parent(model).texture("layer0", "item/" + name);
+    }
+
+    private ItemModelBuilder block(ModelFile model, String name) {
+        return getBuilder(name).parent(model).texture("layer0", "block/" + name);
+    }
+
+    private ItemModelBuilder makeBlockItem(String name) {
+        return withExistingParent(name, modLoc("block/" + name));
+    }
+
+    private ItemModelBuilder makeBlockItem(String name, String extras) {
+        return withExistingParent(name, modLoc("block/" + name + extras));
     }
 
     private ItemModelBuilder newArmorSet(String name, boolean isBreastplate) {
@@ -42,8 +54,9 @@ public abstract class MLItemModelProvider extends ItemModelProvider {
                 "item/milked_sword_base");
     }
 
-    private ItemModelBuilder newBow(String bowName, int pulling) {
-        return getBuilder(bowName + "_pulling_" + pulling).parent(getExistingFile(modLoc("item/" + bowName))).texture("layer0", "item/" + bowName
-                + "_pulling_" + pulling);
+    private ItemModelBuilder newBow(String bowName) {
+        getBuilder(bowName + "_pulling_0").parent(getExistingFile(modLoc("item/" + bowName))).texture("layer0", "item/" + bowName + "_pulling_0");
+        getBuilder(bowName + "_pulling_1").parent(getExistingFile(modLoc("item/" + bowName))).texture("layer0", "item/" + bowName + "_pulling_1");
+        return getBuilder(bowName + "_pulling_2").parent(getExistingFile(modLoc("item/" + bowName))).texture("layer0", "item/" + bowName + "_pulling_2");
     }
 }

@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.common.item;
+package com.junethewoods.melonnierslib.item.custom;
 
 import net.minecraft.item.IItemTier;
 

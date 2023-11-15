@@ -1,6 +1,6 @@
 {
   "credit": "Made with Blockbench",
-  "parent": "item/generated",
+  "gui_light": "front",
   "display": {
     "thirdperson_righthand": {
       "rotation": [0, -90, 55],
@@ -23,16 +23,14 @@
       "scale": [1.68, 1.68, 1.68]
     },
     "ground": {
-      "scale": [2, 2, 2]
-    },
-    "gui": {
+      "translation": [0, 12.75, 0],
       "scale": [2, 2, 2]
     },
     "head": {
       "scale": [2, 2, 2]
     },
     "fixed": {
-      "scale": [2, 2, 2]
+      "scale": [1.25, 1.25, 1]
     }
   }
 }

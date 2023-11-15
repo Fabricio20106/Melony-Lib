@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.core.util;
+package com.junethewoods.melonnierslib.item.custom;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
