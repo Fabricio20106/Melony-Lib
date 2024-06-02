@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.util;
+package com.junethewoods.melonylib.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.tags.ITag;

@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib.data;
+package com.junethewoods.melonylib.data;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;

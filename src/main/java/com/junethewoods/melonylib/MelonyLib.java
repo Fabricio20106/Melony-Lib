@@ -1,4 +1,4 @@
-package com.junethewoods.melonnierslib;
+package com.junethewoods.melonylib;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,12 +11,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(MelonniersLib.MOD_ID)
-public class MelonniersLib {
+@Mod(MelonyLib.MOD_ID)
+public class MelonyLib {
     public static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "melonnierslib";
+    public static final String MOD_ID = "melonylib";
 
-    public MelonniersLib() {
+    public MelonyLib() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
