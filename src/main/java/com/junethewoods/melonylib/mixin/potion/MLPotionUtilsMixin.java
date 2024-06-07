@@ -37,12 +37,14 @@ public abstract class MLPotionUtilsMixin {
             if (effects.get(0).getEffect() == Effects.HARM) color = 0xA9656A;
             if (effects.get(0).getEffect() == Effects.JUMP) color = 0xFDFF84;
             if (effects.get(0).getEffect() == Effects.REGENERATION) color = 0xCD5CAB;
+            if (effects.get(0).getEffect() == Effects.DAMAGE_RESISTANCE) color = 0x9146F0;
             if (effects.get(0).getEffect() == Effects.FIRE_RESISTANCE) color = 0xFF9900;
             if (effects.get(0).getEffect() == Effects.WATER_BREATHING) color = 0x98DAC0;
             if (effects.get(0).getEffect() == Effects.INVISIBILITY) color = 0xF6F6F6;
             if (effects.get(0).getEffect() == Effects.NIGHT_VISION) color = 0xC2FF66;
             if (effects.get(0).getEffect() == Effects.WEAKNESS) color = 0x484D48;
             if (effects.get(0).getEffect() == Effects.POISON) color = 0x87A363;
+            if (effects.get(0).getEffect() == Effects.WITHER) color = 0x736156;
             if (effects.get(0).getEffect() == Effects.LUCK) color = 0x59C106;
             if (effects.get(0).getEffect() == Effects.SLOW_FALLING) color = 0xF3CFB9;
         } else if (effects != null && effects.size() == 2) {
