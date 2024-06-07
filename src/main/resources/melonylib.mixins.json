@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.junethewoods.melonylib.mixin",
+  "refmap": "melonylib.mixins.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "block.MLSpawnerBlockMixin",
+    "entity.MLVillagerEntityMixin",
+    "item.MLBannerItemMixin",
+    "item.MLFireworkRocketItemMixin",
+    "item.MLHangingEntityItemMixin",
+    "item.MLSimpleItemMixins$PotionItemMixin",
+    "item.MLSimpleItemMixins$TridentItemMixin",
+    "item.MLSpawnEggItemMixin",
+    "potion.MLPotionUtilsMixin"
+  ],
+  "client": [
+    "client.MLMinecraftMixin",
+    "client.world.MLDimensionRenderInfoMixin",
+    "tutorial.MLFindTreeStepMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

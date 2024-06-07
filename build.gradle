@@ -45,7 +45,7 @@ minecraft {
     // A Srg-named sources jar is made by default. Uncomment this to disable.
     // makeObfSourceJar = false
 
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -67,6 +67,21 @@ minecraft {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
+
+            // Copied from Tinker's Construct repository.
+            if (project.hasProperty('mc_uuid')) {
+                // Your uuid without any dashes in the middle.
+                args '--uuid', project.getProperty('mc_uuid')
+            }
+            if (project.hasProperty('mc_username')) {
+                // Your username/display name, this is the name that shows up in chat.
+                // Note: This is not your email, even if you have a Mojang account.
+                args '--username', project.getProperty('mc_username')
+            }
+            if (project.hasProperty('mc_accessToken')) {
+                // Your access token, you can find it in your '.minecraft/launcher_profiles.json' file.
+                args '--accessToken', project.getProperty('mc_accessToken')
+            }
 
             mods {
                 melonylib {

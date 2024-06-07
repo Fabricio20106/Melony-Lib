@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#melony:villager_plantable_seeds",
+    "minecraft:wheat",
+    "minecraft:bread",
+    "minecraft:beetroot"
+  ]
+}
