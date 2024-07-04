@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:barrier",
+    "minecraft:structure_void",
+    "minecraft:command_block_minecart",
+    "minecraft:debug_stick",
+    "minecraft:knowledge_book",
+    "minecraft:trident",
+    {
+      "id": "variants:debug_bow",
+      "required": false
+    },
+    {
+      "id": "variants:enchanted_knowledge_book",
+      "required": false
+    }
+  ]
+}

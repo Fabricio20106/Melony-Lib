@@ -1,0 +1,12 @@
+Features:
+
+BasaltColumnFeature - worldgen/basalt_column_cannot_place_on
+DesertWellsFeature - worldgen/valid_sand_for_desert_well (#forge:sand)
+GlowstoneBlobFeature - worldgen/glowstone_can_place_on (netherrack, blackstone, basalt)
+IcebergFeature - worldgen/iceberg_blocks (snow_block, packed_ice, blue_ice)
+IcePathFeature - worldgen/ice_path_can_replace (snow_block)
+IceSpikeFeature - worldgen/ice_spike_can_place_on (snow_block, ice, packed_ice, #forge:dirt)
+KelpFeature, SeaGrassFeature, SeaPickleFeature - worldgen/underwater_vegetation_can_place_on (#water)
+LakesFeature - Fluids - worldgen/uses_stone_in_lakes (#lava) (fix surface block in water lakes)
+TwistingVineFeature - worldgen/twisting_vines_can_place_on (netherrack, warped_nylium, warped_wart_block)
+WeepingVineFeature - worldgen/weeping_vines_can_place_on (netherrack, nether_wart_block)

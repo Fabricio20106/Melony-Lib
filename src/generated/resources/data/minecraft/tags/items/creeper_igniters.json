@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:flint_and_steel",
+    "minecraft:fire_charge",
+    {
+      "id": "variants:soul_charge",
+      "required": false
+    }
+  ]
+}

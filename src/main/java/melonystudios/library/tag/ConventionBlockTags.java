@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.util;
+package melonystudios.library.util;
 
 import net.minecraft.block.Block;
 import net.minecraft.tags.BlockTags;
