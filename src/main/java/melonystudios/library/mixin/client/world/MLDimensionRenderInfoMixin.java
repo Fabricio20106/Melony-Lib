@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.mixin.client.world;
+package melonystudios.library.mixin.client.world;
 
 import net.minecraft.client.world.DimensionRenderInfo;
 import org.spongepowered.asm.mixin.Final;

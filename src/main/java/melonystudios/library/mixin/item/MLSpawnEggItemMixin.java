@@ -1,6 +1,6 @@
-package com.junethewoods.melonylib.mixin.item;
+package melonystudios.library.mixin.item;
 
-import com.junethewoods.melonylib.util.tab.MLSpawnEggsTab;
+import melonystudios.library.util.tab.MLSpawnEggsTab;
 import net.minecraft.item.*;
 import net.minecraft.util.NonNullList;
 import org.spongepowered.asm.mixin.Mixin;

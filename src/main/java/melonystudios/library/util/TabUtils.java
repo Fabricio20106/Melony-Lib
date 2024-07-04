@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.util;
+package melonystudios.library.util;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

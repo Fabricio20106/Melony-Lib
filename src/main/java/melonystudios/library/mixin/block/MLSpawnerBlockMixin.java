@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.mixin.block;
+package melonystudios.library.mixin.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

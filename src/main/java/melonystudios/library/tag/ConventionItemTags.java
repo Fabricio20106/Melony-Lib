@@ -1,4 +1,4 @@
-package melonystudios.library.util;
+package melonystudios.library.tag;
 
 import net.minecraft.item.Item;
 import net.minecraft.tags.ITag;
@@ -15,8 +15,8 @@ public class ConventionItemTags {
     public static final Tags.IOptionalNamedTag<Item> WITH_RARE_RARITY = melonyOptional("with_rarity/rare");
     public static final Tags.IOptionalNamedTag<Item> WITH_EPIC_RARITY = melonyOptional("with_rarity/epic");
 
-    // Minecraft Tags
-    public static final ITag.INamedTag<Item> WART_BLOCKS = minecraft("wart_blocks");
+    // Forge tags
+    public static final ITag.INamedTag<Item> ELYTRA = forge("elytra");
 
     public static ITag.INamedTag<Item> melony(String name) {
         return ItemTags.bind(new ResourceLocation("melony", name).toString());
@@ -26,7 +26,7 @@ public class ConventionItemTags {
         return ItemTags.createOptional(new ResourceLocation("melony", name));
     }
 
-    public static ITag.INamedTag<Item> minecraft(String name) {
-        return ItemTags.bind(new ResourceLocation("minecraft", name).toString());
+    public static ITag.INamedTag<Item> forge(String name) {
+        return ItemTags.bind(new ResourceLocation("forge", name).toString());
     }
 }

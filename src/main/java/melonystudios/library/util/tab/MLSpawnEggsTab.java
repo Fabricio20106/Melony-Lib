@@ -1,6 +1,6 @@
-package com.junethewoods.melonylib.util.tab;
+package melonystudios.library.util.tab;
 
-import com.junethewoods.melonylib.MelonyLib;
+import melonystudios.library.MelonyLib;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

@@ -1,8 +1,8 @@
-package com.junethewoods.melonylib.event;
+package melonystudios.library.event;
 
-import com.junethewoods.melonylib.MelonyLib;
-import com.junethewoods.melonylib.data.tag.MLBlockTagsProvider;
-import com.junethewoods.melonylib.data.tag.MLItemTagsProvider;
+import melonystudios.library.MelonyLib;
+import melonystudios.library.data.tag.MLBlockTagsProvider;
+import melonystudios.library.data.tag.MLItemTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

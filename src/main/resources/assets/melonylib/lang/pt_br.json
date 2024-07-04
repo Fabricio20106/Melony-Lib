@@ -5,12 +5,17 @@
   "block.minecraft.spawner.desc2": " Define o tipo de criatura",
 
   "item.minecraft.scute": "Escama de tartaruga",
+  "item.variants.spawner_minecart": "Carrinho de minas com gerador de criaturas",
 
   "itemGroup.melonylib.spawn_eggs": "Ovos geradores",
   "itemGroup.melonylib.operator_utilities": "Inventário de operador",
   "itemGroup.melonylib.food_and_drinks": "Alimentos e poções",
 
   "item.nbt_tags": "%s componente(s)",
+
+  "container.shulker_box.item_count": " x%s",
+  "container.shulker_box.has_unknown_loot": "Loot ainda não gerado.",
+  "container.shulkerBox.more": "e mais %s... (Segure <Shift> para ver todos os itens)",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Variante aleatória",

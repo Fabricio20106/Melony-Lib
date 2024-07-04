@@ -20,9 +20,9 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.16.5-v1.1'
+version = '1.16.5-v1.3'
 // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-group = 'com.junethewoods.melonylib'
+group = 'melonystudios.library'
 archivesBaseName = 'MelonyLib'
 
 // Mojang ships Java 8 to end users, so your mod should target Java 8.
@@ -56,7 +56,7 @@ minecraft {
             workingDirectory project.file('run')
             property "mixin.debug.export", "true"
 
-            // Recommended logging data for a userdev environment
+            // Recommended logging data for a user development environment
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -94,7 +94,7 @@ minecraft {
             property 'mixin.env.disableRefMap', 'true'
             workingDirectory project.file('run')
 
-            // Recommended logging data for a userdev environment
+            // Recommended logging data for a user development environment
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -117,7 +117,7 @@ minecraft {
             property 'mixin.env.disableRefMap', 'true'
             workingDirectory project.file('run')
 
-            // Recommended logging data for a userdev environment
+            // Recommended logging data for a user development environment
             // The markers can be changed as needed.
             // "SCAN": For mods scan.
             // "REGISTRIES": For firing of registry events.
@@ -153,7 +153,7 @@ sourceSets.main.resources {
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
-    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    // The user development artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.39'
 
     // Compile against the Just Enough Items API but do not include it at runtime.

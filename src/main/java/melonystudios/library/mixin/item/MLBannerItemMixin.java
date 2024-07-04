@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.mixin.item;
+package melonystudios.library.mixin.item;
 
 import net.minecraft.item.*;
 import net.minecraft.nbt.CompoundNBT;

@@ -1,7 +1,7 @@
-package com.junethewoods.melonylib.data.tag;
+package melonystudios.library.data.tag;
 
-import com.junethewoods.melonylib.MelonyLib;
-import com.junethewoods.melonylib.util.ConventionBlockTags;
+import melonystudios.library.MelonyLib;
+import melonystudios.library.tag.ConventionBlockTags;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.tags.BlockTags;

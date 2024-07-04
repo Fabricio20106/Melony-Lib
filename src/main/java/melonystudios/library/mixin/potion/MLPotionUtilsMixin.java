@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.mixin.potion;
+package melonystudios.library.mixin.potion;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;

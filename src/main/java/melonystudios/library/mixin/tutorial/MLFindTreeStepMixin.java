@@ -1,7 +1,7 @@
-package com.junethewoods.melonylib.mixin.tutorial;
+package melonystudios.library.mixin.tutorial;
 
-import com.junethewoods.melonylib.util.ConventionBlockTags;
-import com.junethewoods.melonylib.util.ConventionItemTags;
+import melonystudios.library.tag.ConventionBlockTags;
+import melonystudios.library.tag.ConventionItemTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.entity.player.ClientPlayerEntity;

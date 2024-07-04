@@ -5,12 +5,18 @@
   "block.minecraft.spawner.desc2": " Sets Mob Type",
 
   "item.minecraft.scute": "Turtle Scute",
+  "item.variants.spawner_minecart": "Minecart with Monster Spawner",
 
   "itemGroup.melonylib.spawn_eggs": "Spawn Eggs",
   "itemGroup.melonylib.operator_utilities": "Operator Utilities",
   "itemGroup.melonylib.food_and_drinks": "Food & Drinks",
 
   "item.nbt_tags": "%s component(s)",
+
+  "container.shulker_box.item_count": " x%s",
+  "container.shulker_box.has_unknown_loot": "Loot not yet generated.",
+  "container.shulker_box.hold_shift": "(Hold <Shift> to see all items)",
+  "container.shulkerBox.more": "and %s more...",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Random variant",

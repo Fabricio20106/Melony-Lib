@@ -1,6 +1,6 @@
-package com.junethewoods.melonylib.event;
+package melonystudios.library.event;
 
-import com.junethewoods.melonylib.MelonyLib;
+import melonystudios.library.MelonyLib;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.text.TextFormatting;

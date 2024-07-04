@@ -1,6 +1,6 @@
-package com.junethewoods.melonylib.mixin.entity;
+package melonystudios.library.mixin.entity;
 
-import com.junethewoods.melonylib.util.ConventionItemTags;
+import melonystudios.library.tag.ConventionItemTags;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.merchant.villager.VillagerData;

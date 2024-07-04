@@ -1,4 +1,4 @@
-package com.junethewoods.melonylib.mixin.client;
+package melonystudios.library.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
