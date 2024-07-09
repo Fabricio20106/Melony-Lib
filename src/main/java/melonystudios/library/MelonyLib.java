@@ -43,6 +43,14 @@ public class MelonyLib {
         return new ResourceLocation("variants", name);
     }
 
+    public static ResourceLocation backMath(String name) {
+        return new ResourceLocation("backmath", name);
+    }
+
+    public static ResourceLocation minecraft(String name) {
+        return new ResourceLocation(name);
+    }
+
     private void commonSetup(final FMLCommonSetupEvent event) {
         MLOperatorUtilitiesTab.init();
     }
