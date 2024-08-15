@@ -1,12 +1,13 @@
 package melonystudios.library.tag;
 
+import melonystudios.library.util.LibUtils;
 import net.minecraft.item.Item;
 import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.Tags;
 
 public class ConventionItemTags {
+    // Melony Tags
     public static final ITag.INamedTag<Item> VILLAGER_WANTED_ITEMS = melony("villager_wanted_items");
     public static final ITag.INamedTag<Item> VILLAGER_PLANTABLE_SEEDS = melony("villager_plantable_seeds");
     public static final ITag.INamedTag<Item> COMPLETES_FIND_TREE_TUTORIAL = melony("completes_find_tree_tutorial");
@@ -14,19 +15,20 @@ public class ConventionItemTags {
     public static final Tags.IOptionalNamedTag<Item> WITH_UNCOMMON_RARITY = melonyOptional("with_rarity/uncommon");
     public static final Tags.IOptionalNamedTag<Item> WITH_RARE_RARITY = melonyOptional("with_rarity/rare");
     public static final Tags.IOptionalNamedTag<Item> WITH_EPIC_RARITY = melonyOptional("with_rarity/epic");
+    public static final Tags.IOptionalNamedTag<Item> WITH_POTATO_RARITY = melonyOptional("with_rarity/potato");
 
-    // Forge tags
+    // Forge Tags
     public static final ITag.INamedTag<Item> ELYTRA = forge("elytra");
 
     public static ITag.INamedTag<Item> melony(String name) {
-        return ItemTags.bind(new ResourceLocation("melony", name).toString());
+        return ItemTags.bind(LibUtils.melony(name).toString());
     }
 
     public static Tags.IOptionalNamedTag<Item> melonyOptional(String name) {
-        return ItemTags.createOptional(new ResourceLocation("melony", name));
+        return ItemTags.createOptional(LibUtils.melony(name));
     }
 
     public static ITag.INamedTag<Item> forge(String name) {
-        return ItemTags.bind(new ResourceLocation("forge", name).toString());
+        return ItemTags.bind(LibUtils.forge(name).toString());
     }
 }

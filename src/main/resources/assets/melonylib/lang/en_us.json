@@ -15,8 +15,11 @@
 
   "container.shulker_box.item_count": " x%s",
   "container.shulker_box.has_unknown_loot": "Loot not yet generated.",
-  "container.shulker_box.hold_shift": "(Hold <Shift> to see all items)",
+  "container.shulker_box.hold_shift": "(Hold Shift to see all items)",
   "container.shulkerBox.more": "and %s more...",
+
+  "tooltip.melonylib.compass_coordinates": "Coordinates: X: %s Y: %s Z: %s",
+  "tooltip.melonylib.lodestone_compass_coordinates": "Lodestone: X: %s Y: %s Z: %s",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Random variant",

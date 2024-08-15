@@ -37,7 +37,7 @@ public abstract class MLVillagerEntityMixin extends AbstractVillagerEntity {
 
     @Unique
     private boolean hasAnyMatching(Predicate<ItemStack> stack) {
-        for(int i = 0; i < this.getInventory().getContainerSize(); ++i) {
+        for (int i = 0; i < this.getInventory().getContainerSize(); ++i) {
             ItemStack invStack = this.getInventory().getItem(i);
             if (stack.test(invStack)) {
                 return true;

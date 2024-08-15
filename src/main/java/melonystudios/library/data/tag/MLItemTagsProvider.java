@@ -11,8 +11,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
 
-import static melonystudios.library.MelonyLib.variants;
 import static melonystudios.library.tag.BackportedItemTags.*;
+import static melonystudios.library.util.LibUtils.variants;
 
 public class MLItemTagsProvider extends ItemTagsProvider {
     public MLItemTagsProvider(DataGenerator generator, BlockTagsProvider blockTagsProvider, @Nullable ExistingFileHelper fileHelper) {
@@ -29,8 +29,9 @@ public class MLItemTagsProvider extends ItemTagsProvider {
         this.tag(ConventionItemTags.WITH_RARE_RARITY);
         this.tag(ConventionItemTags.WITH_EPIC_RARITY).add(Items.BARRIER).add(Items.STRUCTURE_VOID).add(Items.COMMAND_BLOCK_MINECART).add(Items.DEBUG_STICK).add(Items.KNOWLEDGE_BOOK).add(Items.TRIDENT).addOptional(
                 variants("debug_bow")).addOptional(variants("enchanted_knowledge_book"));
+        this.tag(ConventionItemTags.WITH_POTATO_RARITY);
 
-        // Forge tags
+        // Forge Tags
         this.tag(ConventionItemTags.ELYTRA).add(Items.ELYTRA);
 
         // Backported Tags

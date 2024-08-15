@@ -5,10 +5,14 @@
   "refmap": "melonylib.mixins.refmap.json",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "block.MLJukeboxBlockMixin",
     "block.MLShulkerBoxBlockMixin",
     "block.MLSpawnerBlockMixin",
+    "blockentity.MLJukeboxTileEntityMixin",
+    "entity.MLPlayerEntityMixin",
     "entity.MLVillagerEntityMixin",
     "item.MLBannerItemMixin",
+    "item.MLCompassItemMixin",
     "item.MLFireworkRocketItemMixin",
     "item.MLHangingEntityItemMixin",
     "item.MLSimpleItemMixins$ItemMixin",
@@ -20,6 +24,7 @@
     "client.MLMinecraftMixin",
     "client.world.MLDimensionRenderInfoMixin",
     "entity.MLCreeperEntityMixin",
+    "gui.MLDebugOverlayGUIMixin",
     "tutorial.MLFindTreeStepMixin"
   ],
   "server": [],

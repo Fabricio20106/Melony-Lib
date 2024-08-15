@@ -1,6 +1,7 @@
 package melonystudios.library.mixin.item;
 
 import melonystudios.library.tag.ConventionItemTags;
+import melonystudios.library.util.LibUtils;
 import net.minecraft.item.*;
 import net.minecraft.tags.ItemTags;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,13 +16,15 @@ public class MLSimpleItemMixins {
         private void getRarity(ItemStack stack, CallbackInfoReturnable<Rarity> cir) {
             if (!ItemTags.getAllTags().getAllTags().isEmpty()) {
                 if (stack.getItem().is(ConventionItemTags.WITH_COMMON_RARITY)) {
-                    cir.setReturnValue(stack.isEnchanted() ? Rarity.UNCOMMON : Rarity.COMMON);
+                    cir.setReturnValue(stack.isEnchanted() ? Rarity.RARE : Rarity.COMMON);
                 } else if (stack.getItem().is(ConventionItemTags.WITH_UNCOMMON_RARITY)) {
                     cir.setReturnValue(stack.isEnchanted() ? Rarity.RARE : Rarity.UNCOMMON);
                 } else if (stack.getItem().is(ConventionItemTags.WITH_RARE_RARITY)) {
                     cir.setReturnValue(stack.isEnchanted() ? Rarity.EPIC : Rarity.RARE);
                 } else if (stack.getItem().is(ConventionItemTags.WITH_EPIC_RARITY)) {
                     cir.setReturnValue(Rarity.EPIC);
+                } else if (stack.getItem().is(ConventionItemTags.WITH_POTATO_RARITY)) {
+                    cir.setReturnValue(LibUtils.potatoRarity());
                 }
             }
         }

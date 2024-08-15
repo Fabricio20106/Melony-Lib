@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lily_pad",
+    {
+      "id": "themato:powder_snow",
+      "required": false
+    }
+  ]
+}
