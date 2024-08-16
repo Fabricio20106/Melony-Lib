@@ -21,6 +21,9 @@
   "tooltip.melonylib.compass_coordinates": "Coordinates: X: %s Y: %s Z: %s",
   "tooltip.melonylib.lodestone_compass_coordinates": "Lodestone: X: %s Y: %s Z: %s",
 
+  "error.melonylib.banner_pattern_manager.parsing": "Could not parse banner pattern '%s'",
+  "console.melonylib.banner_pattern_manager.loaded": "Loaded %s banner pattern(s)",
+
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Random variant",
   "painting.minecraft.alban.author": "Kristoffer Zetterstrand",

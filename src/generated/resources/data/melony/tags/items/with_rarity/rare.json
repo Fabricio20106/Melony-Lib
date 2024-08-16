@@ -1,4 +1,11 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "minecraft:enchanted_golden_apple",
+    "minecraft:trident",
+    "minecraft:nether_star",
+    "minecraft:wither_skeleton_skull",
+    "minecraft:skull_banner_pattern",
+    "minecraft:mojang_banner_pattern"
+  ]
 }

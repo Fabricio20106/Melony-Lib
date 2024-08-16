@@ -6,9 +6,12 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "block.MLJukeboxBlockMixin",
+    "block.MLLeverBlockMixin",
+    "block.MLRedstoneDiodeBlockMixin",
     "block.MLShulkerBoxBlockMixin",
     "block.MLSpawnerBlockMixin",
     "blockentity.MLJukeboxTileEntityMixin",
+    "entity.MLFurnaceMinecartEntityMixin",
     "entity.MLPlayerEntityMixin",
     "entity.MLVillagerEntityMixin",
     "item.MLBannerItemMixin",

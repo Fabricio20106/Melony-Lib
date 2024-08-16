@@ -1,16 +1,23 @@
 package melonystudios.library.event;
 
 import melonystudios.library.MelonyLib;
+import melonystudios.library.util.manager.BannerPatternManager;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraftforge.event.AddReloadListenerEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = MelonyLib.MOD_ID)
 public class MLEvents {
+    @SubscribeEvent
+    public static void onResourceReload(AddReloadListenerEvent event) {
+        event.addListener(new BannerPatternManager());
+    }
+
     @SubscribeEvent
     public static void onAddTooltips(ItemTooltipEvent event) {
         int componentCount = 6;
