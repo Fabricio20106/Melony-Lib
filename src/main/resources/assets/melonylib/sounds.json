@@ -1,0 +1,40 @@
+{
+  "block.spawner.break": {
+    "sounds": [
+      "melony:block/spawner/break1",
+      "melony:block/spawner/break2",
+      "melony:block/spawner/break3",
+      "melony:block/spawner/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.spawner.hit": {
+    "sounds": [
+      "melony:block/spawner/step1",
+      "melony:block/spawner/step2",
+      "melony:block/spawner/step3",
+      "melony:block/spawner/step4",
+      "melony:block/spawner/step5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.spawner.place": {
+    "sounds": [
+      "melony:block/spawner/break1",
+      "melony:block/spawner/break2",
+      "melony:block/spawner/break3",
+      "melony:block/spawner/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.spawner.step": {
+    "sounds": [
+      "melony:block/spawner/step1",
+      "melony:block/spawner/step2",
+      "melony:block/spawner/step3",
+      "melony:block/spawner/step4",
+      "melony:block/spawner/step5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  }
+}

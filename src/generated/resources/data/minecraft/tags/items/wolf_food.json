@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:meat",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:cooked_cod",
+    "minecraft:cooked_salmon",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish",
+    "minecraft:rabbit_stew",
+    {
+      "id": "variants:fish",
+      "required": false
+    },
+    {
+      "id": "variants:cooked_fish",
+      "required": false
+    },
+    {
+      "id": "variants:exponential_rabbit_stew",
+      "required": false
+    }
+  ]
+}

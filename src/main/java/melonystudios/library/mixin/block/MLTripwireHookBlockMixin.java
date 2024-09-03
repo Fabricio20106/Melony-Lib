@@ -1,0 +1,4 @@
+package melonystudios.library.mixin.block;
+
+public class MLTripwireHookBlockMixin {
+}

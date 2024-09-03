@@ -1,0 +1,56 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "minecraft:mutton",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_rabbit",
+    "minecraft:rotten_flesh",
+    {
+      "id": "backmath:aljamic_beef",
+      "required": false
+    },
+    {
+      "id": "backmath:aljamic_porkchop",
+      "required": false
+    },
+    {
+      "id": "backmath:aljamic_mutton",
+      "required": false
+    },
+    {
+      "id": "backmath:aljamic_chicken",
+      "required": false
+    },
+    {
+      "id": "backmath:cooked_aljamic_beef",
+      "required": false
+    },
+    {
+      "id": "backmath:cooked_aljamic_porkchop",
+      "required": false
+    },
+    {
+      "id": "backmath:cooked_aljamic_mutton",
+      "required": false
+    },
+    {
+      "id": "backmath:cooked_aljamic_chicken",
+      "required": false
+    },
+    {
+      "id": "backmath:rotten_aljamic_flesh",
+      "required": false
+    },
+    {
+      "id": "backmath:mortadella",
+      "required": false
+    }
+  ]
+}

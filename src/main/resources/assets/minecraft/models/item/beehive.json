@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:block/beehive_empty",
+  "overrides": [
+    {
+      "predicate": {
+        "melony:honey_level": 0
+      },
+      "model": "item/beehive_empty"
+    },
+    {
+      "predicate": {
+        "melony:honey_level": 1
+      },
+      "model": "item/beehive_empty"
+    },
+    {
+      "predicate": {
+        "melony:honey_level": 2
+      },
+      "model": "item/beehive_empty"
+    },
+    {
+      "predicate": {
+        "melony:honey_level": 3
+      },
+      "model": "item/beehive_empty"
+    },
+    {
+      "predicate": {
+        "melony:honey_level": 4
+      },
+      "model": "item/beehive_empty"
+    },
+    {
+      "predicate": {
+        "melony:honey_level": 5
+      },
+      "model": "item/beehive_honey"
+    }
+  ]
+}
