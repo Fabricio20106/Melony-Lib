@@ -1,16 +1,21 @@
 package melonystudios.library;
 
 import melonystudios.library.config.MLConfigs;
+import melonystudios.library.misc.MLSounds;
+import melonystudios.library.util.LibUtils;
 import melonystudios.library.util.TabUtils;
 import melonystudios.library.util.tab.MLOperatorUtilitiesTab;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +40,7 @@ public class MelonyLib {
         eventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MLSounds.SOUNDS.register(eventBus);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MLConfigs.COMMON_SPEC, "jtw-mods/melonylib-common.toml");
     }
 
@@ -64,5 +70,22 @@ public class MelonyLib {
                 }
             }
         };
+
+        ItemModelsProperties.register(Items.BEE_NEST, LibUtils.melony("honey_level"), (stack, world, livEntity) -> {
+            CompoundNBT tag = stack.getTag();
+            if (tag != null && tag.contains("BlockStateTag", Constants.NBT.TAG_COMPOUND)) {
+                CompoundNBT blockStateTag = tag.getCompound("BlockStateTag");
+                if (blockStateTag.contains("honey_level", Constants.NBT.TAG_INT)) return blockStateTag.getInt("honey_level");
+            }
+            return 0;
+        });
+        ItemModelsProperties.register(Items.BEEHIVE, LibUtils.melony("honey_level"), (stack, world, livEntity) -> {
+            CompoundNBT tag = stack.getTag();
+            if (tag != null && tag.contains("BlockStateTag", Constants.NBT.TAG_COMPOUND)) {
+                CompoundNBT blockStateTag = tag.getCompound("BlockStateTag");
+                if (blockStateTag.contains("honey_level", Constants.NBT.TAG_INT)) return blockStateTag.getInt("honey_level");
+            }
+            return 0;
+        });
     }
 }

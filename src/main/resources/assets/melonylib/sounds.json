@@ -1,40 +1,268 @@
 {
   "block.spawner.break": {
     "sounds": [
-      "melony:block/spawner/break1",
-      "melony:block/spawner/break2",
-      "melony:block/spawner/break3",
-      "melony:block/spawner/break4"
+      "melonylib:block/spawner/break1",
+      "melonylib:block/spawner/break2",
+      "melonylib:block/spawner/break3",
+      "melonylib:block/spawner/break4"
     ],
     "subtitle": "subtitles.block.generic.break"
   },
   "block.spawner.hit": {
     "sounds": [
-      "melony:block/spawner/step1",
-      "melony:block/spawner/step2",
-      "melony:block/spawner/step3",
-      "melony:block/spawner/step4",
-      "melony:block/spawner/step5"
+      "melonylib:block/spawner/step1",
+      "melonylib:block/spawner/step2",
+      "melonylib:block/spawner/step3",
+      "melonylib:block/spawner/step4",
+      "melonylib:block/spawner/step5"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
   "block.spawner.place": {
     "sounds": [
-      "melony:block/spawner/break1",
-      "melony:block/spawner/break2",
-      "melony:block/spawner/break3",
-      "melony:block/spawner/break4"
+      "melonylib:block/spawner/break1",
+      "melonylib:block/spawner/break2",
+      "melonylib:block/spawner/break3",
+      "melonylib:block/spawner/break4"
     ],
     "subtitle": "subtitles.block.generic.place"
   },
   "block.spawner.step": {
     "sounds": [
-      "melony:block/spawner/step1",
-      "melony:block/spawner/step2",
-      "melony:block/spawner/step3",
-      "melony:block/spawner/step4",
-      "melony:block/spawner/step5"
+      "melonylib:block/spawner/step1",
+      "melonylib:block/spawner/step2",
+      "melonylib:block/spawner/step3",
+      "melonylib:block/spawner/step4",
+      "melonylib:block/spawner/step5"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.cobweb.break": {
+    "sounds": [
+      "melonylib:block/cobweb/break1",
+      "melonylib:block/cobweb/break2",
+      "melonylib:block/cobweb/break3",
+      "melonylib:block/cobweb/break4",
+      "melonylib:block/cobweb/break5",
+      "melonylib:block/cobweb/break6"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.cobweb.fall": {
+    "sounds": [
+      "melonylib:block/cobweb/step1",
+      "melonylib:block/cobweb/step2",
+      "melonylib:block/cobweb/step3",
+      "melonylib:block/cobweb/step4",
+      "melonylib:block/cobweb/step5",
+      "melonylib:block/cobweb/step6"
+    ]
+  },
+  "block.cobweb.hit": {
+    "sounds": [
+      "melonylib:block/cobweb/step1",
+      "melonylib:block/cobweb/step2",
+      "melonylib:block/cobweb/step3",
+      "melonylib:block/cobweb/step4",
+      "melonylib:block/cobweb/step5",
+      "melonylib:block/cobweb/step6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.cobweb.place": {
+    "sounds": [
+      "melonylib:block/cobweb/break1",
+      "melonylib:block/cobweb/break2",
+      "melonylib:block/cobweb/break3",
+      "melonylib:block/cobweb/break4",
+      "melonylib:block/cobweb/break5",
+      "melonylib:block/cobweb/break6"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.cobweb.step": {
+    "sounds": [
+      "melonylib:block/cobweb/step1",
+      "melonylib:block/cobweb/step2",
+      "melonylib:block/cobweb/step3",
+      "melonylib:block/cobweb/step4",
+      "melonylib:block/cobweb/step5",
+      "melonylib:block/cobweb/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.sponge.break": {
+    "sounds": [
+      "melonylib:block/sponge/break1",
+      "melonylib:block/sponge/break2",
+      "melonylib:block/sponge/break3",
+      "melonylib:block/sponge/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.sponge.fall": {
+    "sounds": [
+      "melonylib:block/sponge/step1",
+      "melonylib:block/sponge/step2",
+      "melonylib:block/sponge/step3",
+      "melonylib:block/sponge/step4",
+      "melonylib:block/sponge/step5",
+      "melonylib:block/sponge/step6"
+    ]
+  },
+  "block.sponge.hit": {
+    "sounds": [
+      {
+        "name": "melonylib:block/sponge/step1",
+        "volume": 0.8
+      },
+      {
+        "name": "melonylib:block/sponge/step2",
+        "volume": 0.8
+      },
+      {
+        "name": "melonylib:block/sponge/step3",
+        "volume": 0.8
+      },
+      {
+        "name": "melonylib:block/sponge/step4",
+        "volume": 0.8
+      },
+      {
+        "name": "melonylib:block/sponge/step5",
+        "volume": 0.8
+      },
+      {
+        "name": "melonylib:block/sponge/step6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.sponge.place": {
+    "sounds": [
+      "melonylib:block/sponge/break1",
+      "melonylib:block/sponge/break2",
+      "melonylib:block/sponge/break3",
+      "melonylib:block/sponge/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.sponge.step": {
+    "sounds": [
+      "melonylib:block/sponge/step1",
+      "melonylib:block/sponge/step2",
+      "melonylib:block/sponge/step3",
+      "melonylib:block/sponge/step4",
+      "melonylib:block/sponge/step5",
+      "melonylib:block/sponge/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.wet_sponge.break": {
+    "sounds": [
+      "melonylib:block/wet_sponge/break1",
+      "melonylib:block/wet_sponge/break2",
+      "melonylib:block/wet_sponge/break3",
+      "melonylib:block/wet_sponge/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.wet_sponge.fall": {
+    "sounds": [
+      "melonylib:block/wet_sponge/step1",
+      "melonylib:block/wet_sponge/step2",
+      "melonylib:block/wet_sponge/step3",
+      "melonylib:block/wet_sponge/step4"
+    ]
+  },
+  "block.wet_sponge.hit": {
+    "sounds": [
+      "melonylib:block/wet_sponge/step1",
+      "melonylib:block/wet_sponge/step2",
+      "melonylib:block/wet_sponge/step3",
+      "melonylib:block/wet_sponge/step4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.wet_sponge.place": {
+    "sounds": [
+      "melonylib:block/wet_sponge/break1",
+      "melonylib:block/wet_sponge/break2",
+      "melonylib:block/wet_sponge/break3",
+      "melonylib:block/wet_sponge/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.wet_sponge.step": {
+    "sounds": [
+      "melonylib:block/wet_sponge/step1",
+      "melonylib:block/wet_sponge/step2",
+      "melonylib:block/wet_sponge/step3",
+      "melonylib:block/wet_sponge/step4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.vine.break": {
+    "sounds": [
+      {
+        "name": "melonylib:block/vine/break1",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break2",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break3",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break4",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.vine.fall": {
+    "sounds": [
+      "block/vine/climb1",
+      "block/vine/climb2",
+      "block/vine/climb3",
+      "block/vine/climb4",
+      "block/vine/climb5"
+    ]
+  },
+  "block.vine.hit": {
+    "sounds": [
+      "step/grass1",
+      "step/grass2",
+      "step/grass3",
+      "step/grass4",
+      "step/grass5",
+      "step/grass6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.vine.place": {
+    "sounds": [
+      {
+        "name": "melonylib:block/vine/break1",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break2",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break3",
+        "volume": 0.9
+      },
+      {
+        "name": "melonylib:block/vine/break4",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
   }
 }

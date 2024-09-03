@@ -1,5 +1,6 @@
 package melonystudios.library.util;
 
+import melonystudios.library.MelonyLib;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -31,12 +32,20 @@ public class LibUtils {
         return new ResourceLocation("melony", name);
     }
 
+    public static ResourceLocation melonyLib(String name) {
+        return new ResourceLocation(MelonyLib.MOD_ID, name);
+    }
+
     public static ResourceLocation variants(String name) {
         return new ResourceLocation("variants", name);
     }
 
     public static ResourceLocation theMato(String name) {
         return new ResourceLocation("themato", name);
+    }
+
+    public static ResourceLocation backMath(String name) {
+        return new ResourceLocation("backmath", name);
     }
 
     public static Rarity potatoRarity() {

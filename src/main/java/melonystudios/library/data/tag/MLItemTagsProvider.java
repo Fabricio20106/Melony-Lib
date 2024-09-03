@@ -30,7 +30,7 @@ public class MLItemTagsProvider extends ItemTagsProvider {
                 Items.MUSIC_DISC_WARD, Items.MUSIC_DISC_11, Items.MUSIC_DISC_WAIT);
         this.tag(ConventionItemTags.WITH_RARE_RARITY).add(Items.ENCHANTED_GOLDEN_APPLE, Items.TRIDENT, Items.NETHER_STAR, Items.WITHER_SKELETON_SKULL, Items.SKULL_BANNER_PATTERN, Items.MOJANG_BANNER_PATTERN);
         this.tag(ConventionItemTags.WITH_EPIC_RARITY).add(Items.ELYTRA, Items.DRAGON_HEAD, Items.BARRIER, Items.STRUCTURE_VOID, Items.COMMAND_BLOCK_MINECART, Items.DEBUG_STICK, Items.KNOWLEDGE_BOOK).addOptional(
-                variants("debug_bow")).addOptional(variants("enchanted_knowledge_book"));
+                variants("debug_bow")).addOptional(variants("debug_arrow")).addOptional(variants("enchanted_knowledge_book"));
         this.tag(ConventionItemTags.WITH_POTATO_RARITY);
 
         // Forge Tags
@@ -40,5 +40,11 @@ public class MLItemTagsProvider extends ItemTagsProvider {
         this.tag(WART_BLOCKS).add(Items.NETHER_WART_BLOCK, Items.WARPED_WART_BLOCK);
         this.tag(CREEPER_IGNITERS).add(Items.FLINT_AND_STEEL, Items.FIRE_CHARGE).addOptional(variants("soul_charge"));
         this.tag(FURNACE_MINECART_FUEL).addTag(ItemTags.COALS);
+        this.tag(MEAT).add(Items.BEEF).add(Items.PORKCHOP).add(Items.MUTTON).add(Items.CHICKEN).add(Items.RABBIT).add(Items.COOKED_BEEF).add(Items.COOKED_PORKCHOP).add(Items.COOKED_MUTTON).add(Items.COOKED_CHICKEN).add(Items.COOKED_RABBIT)
+                .add(Items.ROTTEN_FLESH).addOptional(backMath("aljamic_beef")).addOptional(backMath("aljamic_porkchop")).addOptional(backMath("aljamic_mutton")).addOptional(backMath("aljamic_chicken"))
+                .addOptional(backMath("cooked_aljamic_beef")).addOptional(backMath("cooked_aljamic_porkchop")).addOptional(backMath("cooked_aljamic_mutton")).addOptional(backMath("cooked_aljamic_chicken"))
+                .addOptional(backMath("rotten_aljamic_flesh")).addOptional(backMath("mortadella"));
+        this.tag(WOLF_FOOD).addTag(MEAT).add(Items.COD).add(Items.SALMON).add(Items.COOKED_COD).add(Items.COOKED_SALMON).add(Items.TROPICAL_FISH).add(Items.PUFFERFISH).add(Items.RABBIT_STEW).addOptional(variants("fish"))
+                .addOptional(variants("cooked_fish")).addOptional(variants("exponential_rabbit_stew"));
     }
 }

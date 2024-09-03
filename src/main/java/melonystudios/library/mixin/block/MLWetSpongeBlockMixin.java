@@ -9,14 +9,14 @@ import org.spongepowered.asm.mixin.Mixin;
 
 import javax.annotation.Nullable;
 
-@Mixin(WebBlock.class)
-public class MLCobwebBlockMixin extends Block {
-    public MLCobwebBlockMixin(Properties properties) {
+@Mixin(WetSpongeBlock.class)
+public class MLWetSpongeBlockMixin extends Block {
+    public MLWetSpongeBlockMixin(Properties properties) {
         super(properties);
     }
 
     @Override
     public SoundType getSoundType(BlockState state, IWorldReader world, BlockPos pos, @Nullable Entity entity) {
-        return MLSoundTypes.COBWEB;
+        return MLSoundTypes.WET_SPONGE;
     }
 }

@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "variants:debug_arrow",
+      "required": false
+    },
+    {
       "id": "variants:enchanted_knowledge_book",
       "required": false
     }

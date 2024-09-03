@@ -59,7 +59,7 @@ public abstract class MLPlayerEntityMixin extends Entity {
                 if (primaryState.is(BackportedBlockTags.COMBINATION_STEP_SOUND_BLOCKS)) {
                     this.playCombinationStepSounds(primaryState, state, primaryPos, pos);
                 } else {
-                    this.playStepSound(primaryPos, primaryState);
+                    super.playStepSound(primaryPos, primaryState);
                 }
             } else {
                 super.playStepSound(pos, state);

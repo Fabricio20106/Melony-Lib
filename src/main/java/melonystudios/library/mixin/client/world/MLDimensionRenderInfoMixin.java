@@ -1,5 +1,6 @@
 package melonystudios.library.mixin.client.world;
 
+import melonystudios.library.config.MLConfigs;
 import net.minecraft.client.world.DimensionRenderInfo;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -16,6 +17,7 @@ public class MLDimensionRenderInfoMixin {
 
     @Inject(method = "getCloudHeight", at = @At("HEAD"), cancellable = true)
     private void getCloudHeight(CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(this.cloudLevel == 128 ? 192 : this.cloudLevel);
+        double newCloudHeight = MLConfigs.COMMON_CONFIGS.defaultCloudHeight.get();
+        cir.setReturnValue(this.cloudLevel == 128 ? (float) newCloudHeight : this.cloudLevel);
     }
 }

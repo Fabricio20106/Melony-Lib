@@ -1,9 +1,12 @@
 package melonystudios.library.mixin.block;
 
+import melonystudios.library.misc.MLSoundTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.SpawnerBlock;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
@@ -14,6 +17,8 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorldReader;
+import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -28,6 +33,11 @@ import java.util.List;
 public class MLSpawnerBlockMixin extends Block {
     public MLSpawnerBlockMixin(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public SoundType getSoundType(BlockState state, IWorldReader world, BlockPos pos, @Nullable Entity entity) {
+        return MLSoundTypes.SPAWNER;
     }
 
     @Inject(method = "getCloneItemStack", at = @At("HEAD"), cancellable = true)
@@ -51,16 +61,16 @@ public class MLSpawnerBlockMixin extends Block {
     @Unique
     @Nullable
     private static ITextComponent getSpawnEntityDisplayName(ItemStack stack) {
-        CompoundNBT tag = stack.getTagElement("BlockEntityTag");
-        ResourceLocation entityKey = getEntityKey(tag);
+        CompoundNBT blockEntityTag = stack.getTagElement("BlockEntityTag");
+        ResourceLocation entityKey = getEntityKey(blockEntityTag);
         return entityKey != null ? new TranslationTextComponent(ForgeRegistries.ENTITIES.getValue(entityKey).getDescriptionId()).withStyle(TextFormatting.GRAY) : null;
     }
 
     @Unique
     @Nullable
-    private static ResourceLocation getEntityKey(CompoundNBT tag) {
-        if (tag != null && tag.contains("SpawnPotentials")) {
-            String entityID = tag.getList("SpawnPotentials", 10).getCompound(0).getCompound("Entity").getString("id");
+    private static ResourceLocation getEntityKey(CompoundNBT blockEntityTag) {
+        if (blockEntityTag != null && blockEntityTag.contains("SpawnPotentials")) {
+            String entityID = blockEntityTag.getList("SpawnPotentials", Constants.NBT.TAG_COMPOUND).getCompound(0).getCompound("Entity").getString("id");
             return ResourceLocation.tryParse(entityID);
         }
         return null;

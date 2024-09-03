@@ -10,6 +10,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.*;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.common.util.Constants;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -30,9 +31,9 @@ public class MLShulkerBoxBlockMixin extends Block {
         super.appendHoverText(stack, world, tooltip, flag);
         CompoundNBT blockEntityTag = stack.getTagElement("BlockEntityTag");
         if (blockEntityTag != null) {
-            if (blockEntityTag.contains("LootTable", 8)) tooltip.add(new TranslationTextComponent("container.shulker_box.has_unknown_loot").withStyle(TextFormatting.GRAY));
+            if (blockEntityTag.contains("LootTable", Constants.NBT.TAG_STRING)) tooltip.add(new TranslationTextComponent("container.shulker_box.has_unknown_loot").withStyle(TextFormatting.GRAY));
 
-            if (blockEntityTag.contains("Items", 9)) {
+            if (blockEntityTag.contains("Items", Constants.NBT.TAG_LIST)) {
                 NonNullList<ItemStack> shulkerItems = NonNullList.withSize(27, ItemStack.EMPTY);
                 ItemStackHelper.loadAllItems(blockEntityTag, shulkerItems);
                 int displayedItems = 0;
