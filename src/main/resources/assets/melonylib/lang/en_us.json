@@ -17,8 +17,8 @@
   "container.shulker_box.has_unknown_loot": "Loot not yet generated.",
   "container.shulker_box.hold_shift": "(Hold Shift to see all items)",
   "container.shulkerBox.more": "and %s more...",
-  "container.beehive.bees": "Bees: %s/%s",
-  "container.beehive.honey": "Honey: %s/%s",
+  "container.beehive.bees": "Bees: %s / %s",
+  "container.beehive.honey": "Honey: %s / %s",
 
   "tooltip.melonylib.compass_coordinates": "Coordinates: X: %s Y: %s Z: %s",
   "tooltip.melonylib.lodestone_compass_coordinates": "Lodestone: X: %s Y: %s Z: %s",
