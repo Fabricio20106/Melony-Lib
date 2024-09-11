@@ -17,8 +17,8 @@
   "container.shulker_box.has_unknown_loot": "Loot ainda não gerado.",
   "container.shulker_box.hold_shift": "(Segure Shift para ver todos os itens)",
   "container.shulkerBox.more": "e mais %s...",
-  "container.beehive.bees": "Abelhas: %s/%s",
-  "container.beehive.honey": "Mel: %s/%s",
+  "container.beehive.bees": "Abelhas: %s / %s",
+  "container.beehive.honey": "Mel: %s / %s",
 
   "tooltip.melonylib.compass_coordinates": "Coordenadas: X: %s Y: %s Z: %s",
   "tooltip.melonylib.lodestone_compass_coordinates": "Magnetita: X: %s Y: %s Z: %s",
