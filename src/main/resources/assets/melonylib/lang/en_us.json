@@ -1,10 +1,27 @@
 {
+  "commands.place.feature.failed": "Failed to place feature",
+  "commands.place.feature.invalid": "There is no feature with type \"%s\"",
+  "commands.place.feature.success": "Placed \"%s\" at %s, %s, %s",
+  "commands.place.structure.failed": "Failed to place structure",
+  "commands.place.structure.invalid": "There is no structure with type \"%s\"",
+  "commands.place.structure.success": "Generated structure \"%s\" at %s, %s, %s",
+  "commands.fillsurface.failed": "No blocks were filled",
+  "commands.fillsurface.tooBig": "Too many blocks in the specified area (maximum %s, specified %s)",
+  "commands.fillsurface.invalid": "There is no surface builder with type \"%s\"",
+  "commands.fillsurface.success": "Successfully filled %s blocks",
+
   "block.minecraft.grass": "Short Grass",
   "block.minecraft.spawner": "Monster Spawner",
   "block.minecraft.spawner.desc1": "Interact with Spawn Egg:",
   "block.minecraft.spawner.desc2": " Sets Mob Type",
 
   "item.minecraft.scute": "Turtle Scute",
+  "item.minecraft.flower_banner_pattern": "Flower Charge Banner Pattern",
+  "item.minecraft.creeper_banner_pattern": "Creeper Charge Banner Pattern",
+  "item.minecraft.skull_banner_pattern": "Skull Charge Banner Pattern",
+  "item.minecraft.mojang_banner_pattern": "Thing Banner Pattern",
+  "item.minecraft.globe_banner_pattern": "Globe Banner Pattern",
+  "item.minecraft.piglin_banner_pattern": "Snout Banner Pattern",
   "item.variants.spawner_minecart": "Minecart with Monster Spawner",
 
   "itemGroup.melonylib.spawn_eggs": "Spawn Eggs",
@@ -25,6 +42,19 @@
 
   "error.melonylib.banner_pattern_manager.parsing": "Could not parse banner pattern '%s'",
   "console.melonylib.banner_pattern_manager.loaded": "Loaded %s banner pattern(s)",
+
+  "resourcePack.high_contrast.tooltip": "Enhances the contrast of UI elements",
+  "options.accessibility.high_contrast": "High Contrast",
+  "options.accessibility.high_contrast.tooltip": "Enhances the contrast of UI elements.",
+  "options.accessibility.high_contrast.error.tooltip": "High Contrast resource pack is not available.",
+  "options.accessibility.high_contrast_block_outline": "High Contrast Block Outlines",
+  "options.accessibility.high_contrast_block_outline.tooltip": "Enhances the block outline contrast of the targeted block.",
+  "options.accessibility.monochrome_logo": "Monochrome Logo",
+  "options.accessibility.monochrome_logo.tooltip": "Changes the Mojang Studios loading screen color from red to black.",
+  "options.accessibility.hide_splash_texts": "Hide Splash Texts",
+  "options.accessibility.hide_splash_texts.tooltip": "Hides the yellow splash text in the main menu.",
+  "options.accessibility.damage_tilt": "Damage Tilt",
+  "options.accessibility.damage_tilt.tooltip": "The amount of camera shake caused by being hurt.",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Random variant",

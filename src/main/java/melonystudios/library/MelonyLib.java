@@ -1,10 +1,15 @@
 package melonystudios.library;
 
+import com.google.common.collect.Lists;
 import melonystudios.library.config.MLConfigs;
+import melonystudios.library.config.MLOptions;
 import melonystudios.library.misc.MLSounds;
 import melonystudios.library.util.LibUtils;
 import melonystudios.library.util.TabUtils;
 import melonystudios.library.util.tab.MLOperatorUtilitiesTab;
+import net.minecraft.client.AbstractOption;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.AccessibilityScreen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.item.ItemStack;
@@ -14,9 +19,11 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -28,6 +35,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Nonnull;
+import java.util.List;
 
 @Mod(MelonyLib.MOD_ID)
 public class MelonyLib {
@@ -42,10 +50,26 @@ public class MelonyLib {
         MinecraftForge.EVENT_BUS.register(this);
         MLSounds.SOUNDS.register(eventBus);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MLConfigs.COMMON_SPEC, "jtw-mods/melonylib-common.toml");
+        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> (DistExecutor.SafeRunnable) LibUtils::addHighContrastResourcePack);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         MLOperatorUtilitiesTab.init();
+
+        MLOptions.MONOCHROME_LOGO.set(Minecraft.getInstance().options, MLConfigs.COMMON_CONFIGS.monochromeMojangLogo.get() ? "true" : "false");
+        MLOptions.HIDE_SPLASH_TEXTS.set(Minecraft.getInstance().options, MLConfigs.COMMON_CONFIGS.hideSplashTexts.get() ? "true" : "false");
+        MLOptions.HIGH_CONTRAST_BLOCK_OUTLINES.set(Minecraft.getInstance().options, MLConfigs.COMMON_CONFIGS.highContrastBlockOutlines.get() ? "true" : "false");
+        MLOptions.DAMAGE_TILT.set(Minecraft.getInstance().options, MLConfigs.COMMON_CONFIGS.damageTilt.get());
+
+        try {
+            List<AbstractOption> options = Lists.newArrayList(AbstractOption.NARRATOR, AbstractOption.SHOW_SUBTITLES, AbstractOption.TEXT_BACKGROUND_OPACITY,
+                    AbstractOption.TEXT_BACKGROUND, AbstractOption.CHAT_OPACITY, AbstractOption.CHAT_LINE_SPACING, AbstractOption.CHAT_DELAY, AbstractOption.AUTO_JUMP,
+                    AbstractOption.TOGGLE_CROUCH, AbstractOption.TOGGLE_SPRINT, AbstractOption.SCREEN_EFFECTS_SCALE, AbstractOption.FOV_EFFECTS_SCALE,
+                    MLOptions.DAMAGE_TILT, MLOptions.MONOCHROME_LOGO, MLOptions.HIDE_SPLASH_TEXTS, MLOptions.HIGH_CONTRAST_BLOCK_OUTLINES);
+            AccessibilityScreen.OPTIONS = options.toArray(new AbstractOption[0]);
+        } catch (Exception exception) {
+            LOGGER.error("Failed to add \"Monochrome Logo\" option to accessibility screen", exception);
+        }
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {

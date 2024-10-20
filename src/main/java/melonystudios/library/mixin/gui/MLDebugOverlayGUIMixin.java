@@ -78,7 +78,7 @@ public abstract class MLDebugOverlayGUIMixin {
     private void getGameInformation(CallbackInfoReturnable<List<String>> cir) {
         String serverInformation = getServerInformation();
         BlockPos cameraPos = this.minecraft.getCameraEntity().blockPosition();
-        String show121 = MLConfigs.COMMON_CONFIGS.show121OnDebugMenu.get() ? "1.21" : SharedConstants.getCurrentVersion().getName();
+        String show121 = MLConfigs.COMMON_CONFIGS.show121OnDebugMenu.get() ? "1.21.1" : SharedConstants.getCurrentVersion().getName();
 
         if (this.minecraft.showOnlyReducedInfo()) {
             cir.setReturnValue(Lists.newArrayList("Minecraft " + show121 + " (" + this.minecraft.getLaunchedVersion() + "/" + ClientBrandRetriever.getClientModName() + ")", this.minecraft.fpsString, serverInformation, this.minecraft.levelRenderer.getChunkStatistics(), this.minecraft.levelRenderer.getEntityStatistics(), "P: " + this.minecraft.particleEngine.countParticles() + ". T: " + this.minecraft.level.getEntityCount(), this.minecraft.level.gatherChunkSourceStats(), "", String.format("Chunk-relative: %d %d %d", cameraPos.getX() & 15, cameraPos.getY() & 15, cameraPos.getZ() & 15)));

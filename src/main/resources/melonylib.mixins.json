@@ -20,9 +20,11 @@
     "blockentity.MLJukeboxTileEntityMixin",
     "entity.MLFurnaceMinecartEntityMixin",
     "entity.MLPlayerEntityMixin",
+    "entity.MLServerPlayerEntityMixin",
     "entity.MLVillagerEntityMixin",
     "entity.MLWolfEntityMixin",
     "item.MLBannerItemMixin",
+    "item.MLBannerPatternItemMixin",
     "item.MLCompassItemMixin",
     "item.MLFireworkRocketItemMixin",
     "item.MLHangingEntityItemMixin",
@@ -33,11 +35,13 @@
     "potion.MLPotionUtilsMixin"
   ],
   "client": [
+    "MLGameRendererMixin",
     "blockentity.MLEPTERMixin",
     "client.MLMinecraftMixin",
     "client.world.MLDimensionRenderInfoMixin",
     "entity.MLCreeperEntityMixin",
     "gui.MLDebugOverlayGUIMixin",
+    "gui.MLMainMenuScreenMixin",
     "tutorial.MLFindTreeStepMixin"
   ],
   "server": [],

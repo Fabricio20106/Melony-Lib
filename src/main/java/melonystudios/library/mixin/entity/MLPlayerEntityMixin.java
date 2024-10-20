@@ -5,16 +5,18 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.Inject;
 
 @Mixin(PlayerEntity.class)
-public abstract class MLPlayerEntityMixin extends Entity {
-    public MLPlayerEntityMixin(EntityType<?> type, World world) {
+public abstract class MLPlayerEntityMixin extends LivingEntity {
+    public MLPlayerEntityMixin(EntityType<? extends LivingEntity> type, World world) {
         super(type, world);
     }
 

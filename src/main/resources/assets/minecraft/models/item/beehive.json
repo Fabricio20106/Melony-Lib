@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/beehive_empty",
+  "parent": "minecraft:block/beehive",
   "overrides": [
     {
       "predicate": {
