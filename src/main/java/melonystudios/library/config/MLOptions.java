@@ -16,7 +16,7 @@ public class MLOptions {
         MLConfigs.COMMON_CONFIGS.monochromeMojangLogo.set(newValue);
 
         int redBackground = ColorHelper.PackedColor.color(255, 239, 50, 61);
-        int blackBackground = ColorHelper.PackedColor.color(255, 0, 0, 0);
+        int blackBackground = ColorHelper.PackedColor.color(255, 0, 0, 0); // 255, 0, 0, 0
         ResourceLoadProgressGui.BRAND_BACKGROUND = MLConfigs.COMMON_CONFIGS.monochromeMojangLogo.get() ? blackBackground : redBackground;
         ResourceLoadProgressGui.BRAND_BACKGROUND_NO_ALPHA = MLConfigs.COMMON_CONFIGS.monochromeMojangLogo.get() ? blackBackground : redBackground & 16777215;
     });

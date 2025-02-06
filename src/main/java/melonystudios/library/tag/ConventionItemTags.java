@@ -8,6 +8,8 @@ import net.minecraftforge.common.Tags;
 
 public class ConventionItemTags {
     // Melony Tags
+    public static final ITag.INamedTag<Item> CROSSBOWS = melony("crossbows");
+    public static final ITag.INamedTag<Item> PIGLIN_CURRENCY = melony("piglin_currency");
     public static final ITag.INamedTag<Item> VILLAGER_WANTED_ITEMS = melony("villager_wanted_items");
     public static final ITag.INamedTag<Item> VILLAGER_PLANTABLE_SEEDS = melony("villager_plantable_seeds");
     public static final ITag.INamedTag<Item> COMPLETES_FIND_TREE_TUTORIAL = melony("completes_find_tree_tutorial");

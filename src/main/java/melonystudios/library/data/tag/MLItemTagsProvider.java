@@ -7,6 +7,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
 import net.minecraft.item.Items;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
@@ -21,6 +23,8 @@ public class MLItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
+        this.tag(ConventionItemTags.PIGLIN_CURRENCY).addTag(Tags.Items.INGOTS_GOLD);
+        this.tag(ConventionItemTags.CROSSBOWS).add(Items.CROSSBOW);
         this.tag(ConventionItemTags.VILLAGER_PLANTABLE_SEEDS).add(Items.WHEAT_SEEDS, Items.CARROT, Items.POTATO, Items.BEETROOT_SEEDS);
         this.tag(ConventionItemTags.VILLAGER_WANTED_ITEMS).addTag(ConventionItemTags.VILLAGER_PLANTABLE_SEEDS).add(Items.WHEAT, Items.BREAD, Items.BEETROOT);
         this.tag(ConventionItemTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(ItemTags.LOGS).addTag(ItemTags.LEAVES).addTag(WART_BLOCKS);
@@ -40,11 +44,14 @@ public class MLItemTagsProvider extends ItemTagsProvider {
         this.tag(WART_BLOCKS).add(Items.NETHER_WART_BLOCK, Items.WARPED_WART_BLOCK);
         this.tag(CREEPER_IGNITERS).add(Items.FLINT_AND_STEEL, Items.FIRE_CHARGE).addOptional(variants("soul_charge"));
         this.tag(FURNACE_MINECART_FUEL).addTag(ItemTags.COALS);
+        this.tag(IGNORED_BY_PIGLIN_BABIES).addTag(Tags.Items.LEATHER);
         this.tag(MEAT).add(Items.BEEF).add(Items.PORKCHOP).add(Items.MUTTON).add(Items.CHICKEN).add(Items.RABBIT).add(Items.COOKED_BEEF).add(Items.COOKED_PORKCHOP).add(Items.COOKED_MUTTON).add(Items.COOKED_CHICKEN).add(Items.COOKED_RABBIT)
                 .add(Items.ROTTEN_FLESH).addOptional(backMath("aljamic_beef")).addOptional(backMath("aljamic_porkchop")).addOptional(backMath("aljamic_mutton")).addOptional(backMath("aljamic_chicken"))
                 .addOptional(backMath("cooked_aljamic_beef")).addOptional(backMath("cooked_aljamic_porkchop")).addOptional(backMath("cooked_aljamic_mutton")).addOptional(backMath("cooked_aljamic_chicken"))
                 .addOptional(backMath("rotten_aljamic_flesh")).addOptional(backMath("mortadella"));
+        this.tag(PIGLIN_FOOD).add(Items.PORKCHOP, Items.COOKED_PORKCHOP);
         this.tag(WOLF_FOOD).addTag(MEAT).add(Items.COD).add(Items.SALMON).add(Items.COOKED_COD).add(Items.COOKED_SALMON).add(Items.TROPICAL_FISH).add(Items.PUFFERFISH).add(Items.RABBIT_STEW).addOptional(variants("fish"))
                 .addOptional(variants("cooked_fish")).addOptional(variants("exponential_rabbit_stew"));
+        this.tag(FOX_FOOD).add(Items.SWEET_BERRIES).addOptional(new ResourceLocation("cavesandcliffs", "glow_berries")).addOptional(backMath("aljamic_berry"));
     }
 }

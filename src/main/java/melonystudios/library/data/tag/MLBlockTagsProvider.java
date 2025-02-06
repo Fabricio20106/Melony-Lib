@@ -21,11 +21,12 @@ public class MLBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
+        this.tag(ConventionBlockTags.MINEABLE_SHEARS).addTag(BlockTags.LEAVES).addTag(BlockTags.WOOL).add(Blocks.COBWEB, Blocks.GRASS, Blocks.FERN, Blocks.DEAD_BUSH, Blocks.VINE, Blocks.TRIPWIRE, Blocks.REDSTONE_WIRE);
         this.tag(ConventionBlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(BlockTags.LOGS).addTag(BlockTags.LEAVES).addTag(BlockTags.WART_BLOCKS);
 
         // Backported Tags
         this.tag(BackportedBlockTags.INSIDE_STEP_SOUND_BLOCKS).add(Blocks.LILY_PAD).addOptional(theMato("powder_snow"));
         this.tag(BackportedBlockTags.COMBINATION_STEP_SOUND_BLOCKS).addTag(BlockTags.CARPETS).add(Blocks.SNOW, Blocks.NETHER_SPROUTS, Blocks.WARPED_ROOTS, Blocks.CRIMSON_ROOTS).addOptional(variants("ender_roots"))
-                .addOptional(variants("ender_sprouts"));
+                .addOptional(variants("end_sprouts"));
     }
 }

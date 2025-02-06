@@ -53,4 +53,33 @@ public abstract class MLPotionUtilsMixin {
 
         cir.setReturnValue(color);
     }
+
+    /*@Inject(method = "getColor(Ljava/util/Collection;)I", at = @At("HEAD"), cancellable = true)
+    private static void getColorFromEffects(Collection<EffectInstance> effects, CallbackInfoReturnable<Integer> cir) {
+        List<EffectInstance> effectList = Lists.newArrayList(effects.iterator());
+        int color = cir.getReturnValue();
+        if (effectList.size() == 1) {
+            if (effectList.get(0).getEffect() == Effects.MOVEMENT_SPEED) color = 0x33EBFF;
+            if (effectList.get(0).getEffect() == Effects.MOVEMENT_SLOWDOWN) color = 0x8BAFE0;
+            if (effectList.get(0).getEffect() == Effects.DAMAGE_BOOST) color = 0xFFC700;
+            if (effectList.get(0).getEffect() == Effects.HEAL) color = 0xF82423;
+            if (effectList.get(0).getEffect() == Effects.HARM) color = 0xA9656A;
+            if (effectList.get(0).getEffect() == Effects.JUMP) color = 0xFDFF84;
+            if (effectList.get(0).getEffect() == Effects.REGENERATION) color = 0xCD5CAB;
+            if (effectList.get(0).getEffect() == Effects.DAMAGE_RESISTANCE) color = 0x9146F0;
+            if (effectList.get(0).getEffect() == Effects.FIRE_RESISTANCE) color = 0xFF9900;
+            if (effectList.get(0).getEffect() == Effects.WATER_BREATHING) color = 0x98DAC0;
+            if (effectList.get(0).getEffect() == Effects.INVISIBILITY) color = 0xF6F6F6;
+            if (effectList.get(0).getEffect() == Effects.NIGHT_VISION) color = 0xC2FF66;
+            if (effectList.get(0).getEffect() == Effects.WEAKNESS) color = 0x484D48;
+            if (effectList.get(0).getEffect() == Effects.POISON) color = 0x87A363;
+            if (effectList.get(0).getEffect() == Effects.WITHER) color = 0x736156;
+            if (effectList.get(0).getEffect() == Effects.LUCK) color = 0x59C106;
+            if (effectList.get(0).getEffect() == Effects.SLOW_FALLING) color = 0xF3CFB9;
+        } else if (effectList.size() == 2) {
+            if (effectList.get(0).getEffect() == Effects.POISON && effectList.get(1).getEffect() == Effects.BLINDNESS) color = 0xC9DFDF;
+        }
+
+        cir.setReturnValue(color);
+    }*/
 }

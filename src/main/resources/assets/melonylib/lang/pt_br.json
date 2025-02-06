@@ -31,6 +31,7 @@
   "block.minecraft.stripped_jungle_log": "Tronco da selva descascado",
   "block.minecraft.stripped_jungle_wood": "Madeira da selva descascada",
   "block.backmath.jungle_grape_vine_post": "Poste de vinhas de uvas da selva",
+  "block.variants.potted_grass": "Grama baixa envasada",
 
   "item.minecraft.scute": "Escama de tartaruga",
   "item.minecraft.jungle_boat": "Bote da selva",
@@ -73,6 +74,8 @@
   "options.accessibility.hide_splash_texts.tooltip": "Oculta os textos iniciais amarelos no menu principal.",
   "options.accessibility.damage_tilt": "Balanço de dano",
   "options.accessibility.damage_tilt.tooltip": "Define a intensidade do balanço da visão ao receber dano.",
+
+  "subtitles.item.axe.strip": "Machado descasca",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Variante aleatória",

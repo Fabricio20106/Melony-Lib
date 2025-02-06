@@ -2,6 +2,7 @@ package melonystudios.library.event;
 
 import melonystudios.library.MelonyLib;
 import melonystudios.library.data.tag.MLBlockTagsProvider;
+import melonystudios.library.data.tag.MLEntityTypeTagsProvider;
 import melonystudios.library.data.tag.MLItemTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -19,5 +20,6 @@ public class MLEventBusEvents {
         MLBlockTagsProvider mlBlockStateProvider = new MLBlockTagsProvider(generator, fileHelper);
         generator.addProvider(mlBlockStateProvider);
         generator.addProvider(new MLItemTagsProvider(generator, mlBlockStateProvider, fileHelper));
+        generator.addProvider(new MLEntityTypeTagsProvider(generator, fileHelper));
     }
 }

@@ -20,6 +20,8 @@ public class MLGameRendererMixin {
     @Final
     private Minecraft minecraft;
 
+    // BUG: mobs attacking you while protecting with a shield still plays animation despite dealing no damage
+    // (discovered while playing in Backend Modpack)
     @Inject(method = "bobHurt", at = @At("HEAD"), cancellable = true)
     private void bobHurt(MatrixStack stack, float partialTicks, CallbackInfo ci) {
         ci.cancel();
@@ -31,15 +33,15 @@ public class MLGameRendererMixin {
                 stack.mulPose(Vector3f.ZP.rotationDegrees(40 - 8000 / (f1 + 200)));
             }
 
-            if (hurtTime < 0) return;
-
-            hurtTime /= livEntity.hurtDuration;
-            hurtTime = MathHelper.sin(hurtTime * hurtTime * hurtTime * hurtTime * (float) Math.PI);
-            float hurtDirection = livEntity.hurtDir;
-            stack.mulPose(Vector3f.YP.rotationDegrees(-hurtDirection));
-            float tiltStrength = (float) ((double) (-hurtTime) * 14 * MLConfigs.COMMON_CONFIGS.damageTilt.get());
-            stack.mulPose(Vector3f.ZP.rotationDegrees(tiltStrength));
-            stack.mulPose(Vector3f.YP.rotationDegrees(hurtDirection));
+            if (hurtTime > 0F) {
+                hurtTime /= livEntity.hurtDuration;
+                hurtTime = MathHelper.sin(hurtTime * hurtTime * hurtTime * hurtTime * (float) Math.PI);
+                float hurtDirection = livEntity.hurtDir;
+                stack.mulPose(Vector3f.YP.rotationDegrees(-hurtDirection));
+                float tiltStrength = (float) ((double) (-hurtTime) * 14 * MLConfigs.COMMON_CONFIGS.damageTilt.get());
+                stack.mulPose(Vector3f.ZP.rotationDegrees(tiltStrength));
+                stack.mulPose(Vector3f.YP.rotationDegrees(hurtDirection));
+            }
         }
     }
 }

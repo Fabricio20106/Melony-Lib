@@ -9,11 +9,15 @@
   "commands.fillsurface.tooBig": "Too many blocks in the specified area (maximum %s, specified %s)",
   "commands.fillsurface.invalid": "There is no surface builder with type \"%s\"",
   "commands.fillsurface.success": "Successfully filled %s blocks",
+  "commands.playsound.success.single": "Playing sound %s to %s",
+  "commands.playsound.success.multiple": "Playing sound %s to %s players",
 
   "block.minecraft.grass": "Short Grass",
+  "block.minecraft.lapis_block": "Block of Lapis Lazuli",
   "block.minecraft.spawner": "Monster Spawner",
   "block.minecraft.spawner.desc1": "Interact with Spawn Egg:",
   "block.minecraft.spawner.desc2": " Sets Mob Type",
+  "block.variants.potted_grass": "Potted Short Grass",
 
   "item.minecraft.scute": "Turtle Scute",
   "item.minecraft.flower_banner_pattern": "Flower Charge Banner Pattern",
@@ -55,6 +59,8 @@
   "options.accessibility.hide_splash_texts.tooltip": "Hides the yellow splash text in the main menu.",
   "options.accessibility.damage_tilt": "Damage Tilt",
   "options.accessibility.damage_tilt.tooltip": "The amount of camera shake caused by being hurt.",
+
+  "subtitles.item.axe.strip": "Axe strips",
 
   "painting.dimensions": "%sx%s",
   "painting.random_variant": "Random variant",

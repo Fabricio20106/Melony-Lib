@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sweet_berries",
+    {
+      "id": "cavesandcliffs:glow_berries",
+      "required": false
+    },
+    {
+      "id": "backmath:aljamic_berry",
+      "required": false
+    }
+  ]
+}
